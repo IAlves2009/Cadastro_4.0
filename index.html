@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boots.css">
+    <link rel="stylesheet" href="bootw.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-none" id="mensagens">
+            <div class="col">
+                <div class="alert alert-danger">Cadastro incorreto</div>
+            </div>
+        </div>
+
+        <div class="row" id="mensagens">
+            <div class="col-md-8">
+                <table class="table table-striped table-sm">
+                    <thead>
+                        <tr>
+                            <th>NOME</th>
+                            <th>TELEFONE</th>
+                            <th>EMAIL</th>
+                            <th>SEXO</th>
+                            <th>DATA</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista">
+                        <tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4"></div>
+            <form>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+                <input type="tel" class="form-control" id="telefone" placeholder="Telefone">
+                <input type="text" class="form-control" id="email" placeholder="Email">
+                <select class="form-select form-select-sm" aria-label="Small select example" id="sexo">
+                    <option selected>Sexo</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                    <option value="Prefiro nao dizer">Prefiro nao dizer</option>
+                </select>
+                <input type="date" class="form-control" id="data" placeholder="Data">
+                <button type="submit" id='btn_cadastrar' class="btn btn-primary">Cadastrar</button>
+                <input type="hidden" name="id_tmp" id="id_tmp">
+            </form>
+        </div>
+    </div>
+
+    <div id="drawChart" style="width: 900px; height: 500px;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="boots.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
